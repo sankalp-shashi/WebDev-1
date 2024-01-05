@@ -10,13 +10,12 @@ html{
 }
 
 body{
-    background: #eeeeee; /*background color*/
+    background: #ece6e6; /*background color*/
     color: #fff; /*text color*/
     background-image: url("images/background.png"); 
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #header{
@@ -31,7 +30,7 @@ body{
 
 nav{
     display: flex;
-    align-items: center;
+    align-items:end;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
@@ -312,7 +311,7 @@ button:hover{
 }
 
 #blankCase{
-    display: none;
+    display: none ;
 }
 /* .tile p{
 

@@ -28,9 +28,11 @@ function firstCaseToggle(){
     let blankCaseText = document.getElementById("blankCase");
     if (secondCaseText.style.display === "block") {
         secondCaseText.style.display = "none";
+        firstCaseText.style.display = "block";
     }
     else if (thirdCaseText.style.display === "block") {
         thirdCaseText.style.display = "none";
+        firstCaseText.style.display = "block";
     }
     
     else if (blankCaseText.style.display === "block") {
@@ -52,14 +54,17 @@ function secondCaseToggle(){
     let blankCaseText = document.getElementById("blankCase");
     if (firstCaseText.style.display === "block") {
         firstCaseText.style.display = "none";
+        secondCaseText.style.display = "block";
     }
     else if (thirdCaseText.style.display === "block") {
         thirdCaseText.style.display = "none";
+        secondCaseText.style.display = "block";
     }
     else if (blankCaseText.style.display === "block") { 
         blankCaseText.style.display = "none";
+        secondCaseText.style.display = "block";
     }
-    if (secondCaseText.style.display === "none") {
+    else if (secondCaseText.style.display === "none") {
         secondCaseText.style.display = "block";
         scrollTo(0,2000);
     }
@@ -77,14 +82,17 @@ function thirdCaseToggle(){
     let blankCaseText = document.getElementById("blankCase");
     if (secondCaseText.style.display === "block") {
         secondCaseText.style.display = "none";
+        thirdCaseText.style.display = "block";
     }
     else if (firstCaseText.style.display === "block") {
         firstCaseText.style.display = "none";
+        thirdCaseText.style.display = "block";
     }
     else if (blankCaseText.style.display === "block") { 
         blankCaseText.style.display = "none";
+        thirdCaseText.style.display = "block";
     }
-    if (thirdCaseText.style.display === "none") {
+    else if (thirdCaseText.style.display === "none") {
         thirdCaseText.style.display = "block";
         scrollTo(0,2000);
     }
